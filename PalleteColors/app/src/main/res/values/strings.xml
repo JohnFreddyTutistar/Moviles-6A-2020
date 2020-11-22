@@ -9,6 +9,11 @@
     <string name="lbl_alpha">Alpha</string>
 
     <string name="title_AboutOf">About of</string>
-    <string name="title_Help">Help</string>
+    <string name="title_Help">Help</string> 
+
+    <string name="bg_image">Background image</string>
+
+    <!-- Titles Menus -->
+    <string name="title_ite_exit">Exit</string>
 
 </resources>
