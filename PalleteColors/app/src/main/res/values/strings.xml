@@ -8,8 +8,20 @@
     <string name="lbl_blue">Blue</string>
     <string name="lbl_alpha">Alpha</string>
 
+    <string name="iteTrasparent">Transparent</string>
+    <string name="iteSemiTrasparent">Semitransparent</string>
+    <string name="iteOpaque">Opaque</string>
+    <string name="iteBlack">Black</string>
+    <string name="iteWhite">White</string>
+    <string name="iteRed">Red</string>
+    <string name="iteBlue">Blue</string>
+    <string name="iteCyan">Cyan</string>
+    <string name="iteMagenta">Magenta</string>
+    <string name="iteYellow">Yellow</string>
+
     <string name="title_AboutOf">About of</string>
-    <string name="title_Help">Help</string> 
+    <string name="title_Help">Help</string>
+
 
     <string name="bg_image">Background image</string>
 

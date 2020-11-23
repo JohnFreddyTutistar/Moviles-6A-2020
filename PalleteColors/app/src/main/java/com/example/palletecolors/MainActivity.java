@@ -3,10 +3,13 @@ package com.example.palletecolors;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
@@ -16,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     private SeekBar sbr_Green = null;
     private SeekBar sbr_Blue = null;
     private SeekBar sbr_Alpha = null;
-    private SeekBar view_Colors = null;
+    private View vie_Colors = null;
 
 
     @Override
@@ -28,7 +31,12 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         sbr_Green = findViewById(R.id.sbrGreen);
         sbr_Blue = findViewById(R.id.sbrBlue);
         sbr_Alpha = findViewById(R.id.sbrAlpha);
-        //view_Colors = findViewById(R.id.viewColors);
+        vie_Colors = findViewById(R.id.viewColors);
+
+        sbr_Red.setOnSeekBarChangeListener(this);
+        sbr_Green.setOnSeekBarChangeListener(this);
+        sbr_Blue.setOnSeekBarChangeListener(this);
+        sbr_Alpha.setOnSeekBarChangeListener(this);
     }
 
     //Show options menu
@@ -44,11 +52,15 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         switch (item.getItemId()){
 
             case R.id.iteSearch:
-                Toast.makeText(this, "You've pressed Search of option", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "You've pressed Search of option", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, AboutOfActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.iteAboutOf :
-                Toast.makeText(this, "You've pressed About of option", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You've pressed About of option", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(this, AboutOfActivity.class);
+                startActivity(intent2);
                 break;
 
             case R.id.iteHelp :
@@ -63,8 +75,14 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     }
 
     @Override
-    public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+    public void onProgressChanged(SeekBar seekBar, int i, boolean bo) {
+        int r = sbr_Red.getProgress();
+        int g = sbr_Green.getProgress();
+        int b = sbr_Blue.getProgress();
+        int a = sbr_Alpha.getProgress();
 
+        int color = Color.argb(a,r,g,b);
+        vie_Colors.setBackgroundColor(color);
     }
 
     @Override
