@@ -15,5 +15,6 @@
 
     <!-- Titles Menus -->
     <string name="title_ite_exit">Exit</string>
+    <string name="title_search">Search</string>
 
 </resources>

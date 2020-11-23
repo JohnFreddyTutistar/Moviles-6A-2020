@@ -11,4 +11,5 @@
     <string name="bg_image">Imagen de fondo</string>
     <!-- Titles Menus -->
     <string name="title_ite_exit">Salir</string>
+    <string name="title_search">Buscar</string>
 </resources>

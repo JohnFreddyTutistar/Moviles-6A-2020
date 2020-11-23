@@ -28,10 +28,12 @@
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/sbrRed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,10 +51,12 @@
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar2"
+                android:id="@+id/sbrGreen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,10 +74,12 @@
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar3"
+                android:id="@+id/sbrBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255"/>
         </LinearLayout>
 
         <LinearLayout
@@ -91,10 +97,12 @@
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar4"
+                android:id="@+id/sbrAlpha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255" />
 
         </LinearLayout>
 
@@ -104,7 +112,7 @@
             android:background="@drawable/img">
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/viewColors"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </FrameLayout>
