@@ -12,8 +12,8 @@
     <!-- Titles Menus -->
     <string name="title_ite_exit">Salir</string>
     <string name="title_search">Buscar</string>
-    <string name="iteTrasparent">Transparente</string>
-    <string name="iteSemiTrasparent">Semi Transparente</string>
+    <string name="iteTransparent">Transparente</string>
+    <string name="iteSemiTransparent">Semi Transparente</string>
     <string name="iteOpaque">Opaco</string>
     <string name="iteBlack">Negro</string>
     <string name="iteWhite">Blanco</string>
@@ -22,4 +22,8 @@
     <string name="iteCyan">Cian</string>
     <string name="iteMagenta">Magenta</string>
     <string name="iteYellow">Amarillo</string>
+    <string name="iteGreen">Verde</string>
+    <string name="title_reset">Resetear</string>
+    <string name="title_exit">Salir</string>
+
 </resources>

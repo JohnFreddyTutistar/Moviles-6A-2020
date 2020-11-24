@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    <!--
     <item
         android:id="@+id/iteSearch"
         android:title="@string/title_search"
         android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+    <item
+    -->
+    <item
+        android:id="@+id/iteReset"
+        android:title="@string/title_reset"
+        android:icon="@drawable/ic_reset"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/iteHelp"
@@ -20,10 +27,10 @@
         android:title="@string/title_ite_exit" />
     <item
         android:id="@+id/iteTransparent"
-        android:title="@string/iteTrasparent" />
+        android:title="@string/iteTransparent" />
     <item
         android:id="@+id/iteSemiTransparent"
-        android:title="@string/iteSemiTrasparent" />
+        android:title="@string/iteSemiTransparent" />
     <item
         android:id="@+id/iteOpaque"
         android:title="@string/iteOpaque" />
@@ -48,5 +55,9 @@
     <item
         android:id="@+id/iteYellow"
         android:title="@string/iteYellow" />
+    <item
+        android:id="@+id/iteGreen"
+        android:title="Green" />
+
 
 </menu>

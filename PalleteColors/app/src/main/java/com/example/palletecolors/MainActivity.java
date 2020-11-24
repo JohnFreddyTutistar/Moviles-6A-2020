@@ -50,17 +50,17 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-
+            /*
             case R.id.iteSearch:
                 //Toast.makeText(this, "You've pressed Search of option", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, AboutOfActivity.class);
                 startActivity(intent);
-                break;
+                break;*/
 
             case R.id.iteAboutOf :
                 //Toast.makeText(this, "You've pressed About of option", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(this, AboutOfActivity.class);
-                startActivity(intent2);
+                Intent intent1 = new Intent(this, AboutOfActivity.class);
+                startActivity(intent1);
                 break;
 
             case R.id.iteHelp :
@@ -70,6 +70,56 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
             case R.id.iteExit :
                 Toast.makeText(this, "You've pressed E xit option", Toast.LENGTH_SHORT).show();
                 break;
+
+            case R.id.iteReset :
+                break;
+
+            case R.id.iteTransparent :
+                sbr_Alpha.setProgress(0);
+                break;
+
+            case R.id.iteSemiTransparent :
+                sbr_Alpha.setProgress(128);
+                break;
+
+            case R.id.iteOpaque :
+                sbr_Alpha.setProgress(255);
+                break;
+
+            case R.id.iteBlack :
+
+                break;
+
+            case R.id.iteWhite :
+                break;
+
+            case R.id.iteRed :
+                break;
+
+            case R.id.iteBlue :
+                sbr_Red.setProgress(0);
+                sbr_Green.setProgress(0);
+                sbr_Blue.setProgress(255);
+                break;
+
+            case R.id.iteCyan :
+                break;
+
+            case R.id.iteMagenta :
+                sbr_Red.setProgress(255);
+                sbr_Green.setProgress(0);
+                sbr_Blue.setProgress(255);
+                break;
+
+            case R.id.iteYellow :
+                sbr_Red.setProgress(255);
+                sbr_Green.setProgress(255);
+
+                break;
+
+            case R.id.iteGreen :
+                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
